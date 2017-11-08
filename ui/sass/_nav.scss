@@ -1,0 +1,56 @@
+.nav {
+    /* start grid properties */
+    align-self: stretch;
+    justify-self: stretch;
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+    @media screen and (max-width: 768px) {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    /* end */
+
+    background: #000;
+    overflow: hidden;
+    padding: 0 50px;
+    text-align: center;
+    z-index: 9999;
+    
+    ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        margin-top: 40px;
+        
+        li {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 100;
+
+            a {
+                color: lighten($copy-color, 50%);
+                text-decoration: none;
+                text-transform: lowercase;
+                transition: ease .2s;
+
+                span {
+                    font-family: $copy-font;
+                    opacity: 0;
+                    transition: ease .3s;
+                }
+
+                &:hover {
+                    color: #fff;
+                    transition: ease .3s;
+
+                    span {
+                        opacity: 1;
+                        padding-left: 15px;
+                        transition: ease .3s;
+                    }
+                }
+            }
+        }
+    }
+}

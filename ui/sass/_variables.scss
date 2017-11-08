@@ -1,0 +1,133 @@
+/* === Variables === */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400,700,400i');
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tg1uf5');
+    src:  url('../fonts/icomoon.eot?tg1uf5#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?tg1uf5') format('truetype'),
+    url('../fonts/icomoon.woff?tg1uf5') format('woff'),
+    url('../fonts/icomoon.svg?tg1uf5#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home2:before {
+    content: "\e901";
+}
+.icon-quill:before {
+    content: "\e907";
+}
+.icon-headphones:before {
+    content: "\e910";
+}
+.icon-play:before {
+    content: "\e912";
+}
+.icon-spades:before {
+    content: "\e917";
+}
+.icon-cart:before {
+    content: "\e93a";
+}
+.icon-map:before {
+    content: "\e94b";
+}
+.icon-display:before {
+    content: "\e956";
+}
+.icon-bubble:before {
+    content: "\e96b";
+}
+.icon-user:before {
+    content: "\e971";
+}
+.icon-meter:before {
+    content: "\e9a6";
+}
+.icon-warning:before {
+    content: "\ea07";
+}
+.icon-cross:before {
+    content: "\ea0f";
+}
+.icon-checkmark:before {
+    content: "\ea10";
+}
+.icon-arrow-right2:before {
+    content: "\ea3c";
+}
+.icon-radio-unchecked:before {
+    content: "\ea56";
+}
+.icon-amazon:before {
+    content: "\ea87";
+}
+.icon-facebook:before {
+    content: "\ea90";
+}
+.icon-instagram:before {
+    content: "\ea92";
+}
+.icon-spotify:before {
+    content: "\ea94";
+}
+.icon-telegram:before {
+    content: "\ea95";
+}
+.icon-github:before {
+    content: "\eab0";
+}
+.icon-appleinc:before {
+    content: "\eabe";
+}
+.icon-android:before {
+    content: "\eac0";
+}
+.icon-linkedin2:before {
+    content: "\eaca";
+}
+.icon-chrome:before {
+    content: "\ead9";
+}
+.icon-firefox:before {
+    content: "\eada";
+}
+.icon-html-five2:before {
+    content: "\eae5";
+}
+.icon-css3:before {
+    content: "\eae6";
+}
+.icon-codepen:before {
+    content: "\eae8";
+}
+
+$title-font: 'Playfair Display', serif;
+$copy-font: 'Lato', sans-serif;
+
+/* Colors */
+$blue: #aed5ec;
+$gray: #f2f2f2;
+$copy-color: #333;
+
+/* Styles */
+$boxShadow: 0px 3px 6px -2px rgba(94,94,94,0.4);
+$boxShadowUp: 0px 5px 8px 1px rgba(94,94,94,0.1);

@@ -1,0 +1,300 @@
+/* === Variables === */
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400,700,400i");
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?tg1uf5");
+  src: url("../fonts/icomoon.eot?tg1uf5#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?tg1uf5") format("truetype"), url("../fonts/icomoon.woff?tg1uf5") format("woff"), url("../fonts/icomoon.svg?tg1uf5#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-home2:before {
+  content: "\e901"; }
+
+.icon-quill:before {
+  content: "\e907"; }
+
+.icon-headphones:before {
+  content: "\e910"; }
+
+.icon-play:before {
+  content: "\e912"; }
+
+.icon-spades:before {
+  content: "\e917"; }
+
+.icon-cart:before {
+  content: "\e93a"; }
+
+.icon-map:before {
+  content: "\e94b"; }
+
+.icon-display:before {
+  content: "\e956"; }
+
+.icon-bubble:before {
+  content: "\e96b"; }
+
+.icon-user:before {
+  content: "\e971"; }
+
+.icon-meter:before {
+  content: "\e9a6"; }
+
+.icon-warning:before {
+  content: "\ea07"; }
+
+.icon-cross:before {
+  content: "\ea0f"; }
+
+.icon-checkmark:before {
+  content: "\ea10"; }
+
+.icon-arrow-right2:before {
+  content: "\ea3c"; }
+
+.icon-radio-unchecked:before {
+  content: "\ea56"; }
+
+.icon-amazon:before {
+  content: "\ea87"; }
+
+.icon-facebook:before {
+  content: "\ea90"; }
+
+.icon-instagram:before {
+  content: "\ea92"; }
+
+.icon-spotify:before {
+  content: "\ea94"; }
+
+.icon-telegram:before {
+  content: "\ea95"; }
+
+.icon-github:before {
+  content: "\eab0"; }
+
+.icon-appleinc:before {
+  content: "\eabe"; }
+
+.icon-android:before {
+  content: "\eac0"; }
+
+.icon-linkedin2:before {
+  content: "\eaca"; }
+
+.icon-chrome:before {
+  content: "\ead9"; }
+
+.icon-firefox:before {
+  content: "\eada"; }
+
+.icon-html-five2:before {
+  content: "\eae5"; }
+
+.icon-css3:before {
+  content: "\eae6"; }
+
+.icon-codepen:before {
+  content: "\eae8"; }
+
+/* Colors */
+/* Styles */
+html {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #fff;
+  color: #333;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  padding: 0 50px; }
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 125px;
+  font-weight: normal;
+  line-height: 1.1; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 45px;
+      font-weight: normal; } }
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  font-weight: normal; }
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  font-weight: normal; }
+
+h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  font-weight: normal; }
+
+h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: normal; }
+
+a {
+  color: blue; }
+
+.button {
+  background: #fff;
+  border: 1px solid #bfbfbf;
+  border-radius: 3px;
+  box-shadow: 0px 3px 6px -2px rgba(94, 94, 94, 0.4);
+  color: #333;
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 100;
+  margin: 15px 10px 12px;
+  padding: 15px 55px;
+  text-decoration: none;
+  transition: ease .2s; }
+  .button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 5px 8px 1px rgba(94, 94, 94, 0.1);
+    transition: ease .3s; }
+
+.nav {
+  /* start grid properties */
+  align-self: stretch;
+  justify-self: stretch;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  /* end */
+  background: #000;
+  overflow: hidden;
+  padding: 0 50px;
+  text-align: center;
+  z-index: 9999; }
+  @media screen and (max-width: 768px) {
+    .nav {
+      grid-column: 1/4;
+      grid-row: 1/2; } }
+  .nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 40px; }
+    .nav ul li {
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 100; }
+      .nav ul li a {
+        color: #b3b3b3;
+        text-decoration: none;
+        text-transform: lowercase;
+        transition: ease .2s; }
+        .nav ul li a span {
+          font-family: "Lato", sans-serif;
+          opacity: 0;
+          transition: ease .3s; }
+        .nav ul li a:hover {
+          color: #fff;
+          transition: ease .3s; }
+          .nav ul li a:hover span {
+            opacity: 1;
+            padding-left: 15px;
+            transition: ease .3s; }
+
+.foot {
+  /* start grid properties */
+  align-self: stretch;
+  justify-self: stretch;
+  grid-area: foot;
+  grid-column: 1/3;
+  grid-row: 3/4;
+  /* end */
+  background: #fff;
+  border-top: 1px solid #d9d9d9;
+  text-align: center; }
+  @media screen and (max-width: 768px) {
+    .foot {
+      display: none; } }
+  .foot ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 40px; }
+    .foot ul li {
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 100; }
+      .foot ul li a {
+        color: #b3b3b3;
+        text-decoration: none;
+        text-transform: lowercase;
+        transition: ease .2s; }
+        .foot ul li a span {
+          font-family: "Lato", sans-serif;
+          opacity: 0;
+          transition: ease .3s; }
+        .foot ul li a:hover {
+          transition: ease .3s; }
+          .foot ul li a:hover span {
+            opacity: 1;
+            padding-left: 15px;
+            transition: ease .3s; }
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 35%;
+  grid-template-rows: 100px calc(100vh - 200px) 100px;
+  grid-column-gap: 0;
+  grid-row-gap: 0; }
+  @media screen and (max-width: 768px) {
+    .home {
+      grid-template-columns: 1fr;
+      grid-template-rows: 55px repeat(2, 1fr) 15px; } }
+
+.cell-1 {
+  align-self: center;
+  justify-self: stretch;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  text-align: right; }
+  @media screen and (max-width: 768px) {
+    .cell-1 {
+      grid-column: 1/2;
+      grid-row: 2/3; } }
+
+.cell-2 {
+  align-self: center;
+  justify-self: stretch;
+  grid-column: 2/3;
+  grid-row: 2/3; }
+
+.home-header {
+  padding: 25px 0; }
+
+.bio-pic img {
+  width: 100%; }
+
+/*# sourceMappingURL=imports.css.map */

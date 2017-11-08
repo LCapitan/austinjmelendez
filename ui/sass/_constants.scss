@@ -1,0 +1,62 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    color: $copy-color;
+    font-family: $copy-font;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0 50px;
+}
+
+h1 {
+    font-family: $title-font;
+    font-size: 125px;
+    font-weight: normal;
+    line-height: 1.1;
+
+    @media screen and (max-width: 768px) {
+        font-size: 45px;
+        font-weight: normal;
+    }
+}
+
+h2 {
+    font-family: $title-font;
+    font-size: 45px;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: $title-font;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+h4 {
+    font-family: $copy-font;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+h4 {
+    font-family: $copy-font;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+a {
+    color: blue;
+}
