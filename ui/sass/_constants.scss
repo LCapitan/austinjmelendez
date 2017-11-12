@@ -1,6 +1,19 @@
-html {
+* {
     margin: 0;
     padding: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+html {
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 20px;
+    }
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -12,51 +25,44 @@ body {
     background: #fff;
     color: $copy-color;
     font-family: $copy-font;
-    font-size: 18px;
-    margin: 0;
+    font-weight: 100;
+    margin: 0 auto;
     padding: 0;
-}
-
-.container {
-    padding: 0 50px;
+    width: 100vw;
+    max-width: 1440px;
 }
 
 h1 {
-    font-family: $title-font;
-    font-size: 125px;
-    font-weight: normal;
-    line-height: 1.1;
-
-    @media screen and (max-width: 768px) {
-        font-size: 45px;
-        font-weight: normal;
-    }
+    font-family: $patua;
+    font-size: 2.5em;
+    font-weight: 400;
 }
 
 h2 {
-    font-family: $title-font;
-    font-size: 45px;
-    font-weight: normal;
+    font-family: $copy-font;
+    font-size: 2em;
+    font-weight: 100;
 }
 
 h3 {
     font-family: $title-font;
-    font-size: 26px;
     font-weight: normal;
 }
 
 h4 {
     font-family: $copy-font;
-    font-size: 22px;
     font-weight: normal;
 }
 
 h4 {
     font-family: $copy-font;
-    font-size: 18px;
     font-weight: normal;
 }
 
 a {
-    color: blue;
+    color: $primary;
+
+    &:hover {
+        color: darken($primary,15%)
+    }
 }

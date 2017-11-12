@@ -1,15 +1,15 @@
 /* === Variables === */
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400,700,400i');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400,700|Patua+One|Source+Code+Pro:300,500');
 
 @font-face {
     font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?tg1uf5');
-    src:  url('../fonts/icomoon.eot?tg1uf5#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?tg1uf5') format('truetype'),
-    url('../fonts/icomoon.woff?tg1uf5') format('woff'),
-    url('../fonts/icomoon.svg?tg1uf5#icomoon') format('svg');
+    src:  url('../fonts/icomoon/icomoon.eot?14cjf0');
+    src:  url('../fonts/icomoon/icomoon.eot?14cjf0#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?14cjf0') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?14cjf0') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?14cjf0#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -29,59 +29,101 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-home2:before {
-    content: "\e901";
+.icon-home:before {
+    content: "\e900";
 }
-.icon-quill:before {
-    content: "\e907";
+.icon-pencil2:before {
+    content: "\e906";
 }
-.icon-headphones:before {
-    content: "\e910";
+.icon-images:before {
+    content: "\e90e";
 }
-.icon-play:before {
-    content: "\e912";
+.icon-connection:before {
+    content: "\e91b";
 }
-.icon-spades:before {
-    content: "\e917";
-}
-.icon-cart:before {
-    content: "\e93a";
-}
-.icon-map:before {
-    content: "\e94b";
+.icon-stack:before {
+    content: "\e92e";
 }
 .icon-display:before {
     content: "\e956";
 }
-.icon-bubble:before {
-    content: "\e96b";
+.icon-mobile:before {
+    content: "\e958";
+}
+.icon-mobile2:before {
+    content: "\e959";
+}
+.icon-database:before {
+    content: "\e964";
 }
 .icon-user:before {
     content: "\e971";
 }
-.icon-meter:before {
-    content: "\e9a6";
+.icon-enlarge2:before {
+    content: "\e98b";
 }
-.icon-warning:before {
-    content: "\ea07";
+.icon-shrink2:before {
+    content: "\e98c";
 }
-.icon-cross:before {
-    content: "\ea0f";
+.icon-magic-wand:before {
+    content: "\e997";
 }
-.icon-checkmark:before {
-    content: "\ea10";
+.icon-bug:before {
+    content: "\e999";
+}
+.icon-pie-chart:before {
+    content: "\e99a";
+}
+.icon-stats-dots:before {
+    content: "\e99b";
+}
+.icon-stats-bars:before {
+    content: "\e99c";
+}
+.icon-mug:before {
+    content: "\e9a2";
+}
+.icon-spoon-knife:before {
+    content: "\e9a3";
+}
+.icon-meter2:before {
+    content: "\e9a7";
+}
+.icon-fire:before {
+    content: "\e9a9";
+}
+.icon-lab:before {
+    content: "\e9aa";
+}
+.icon-airplane:before {
+    content: "\e9af";
+}
+.icon-truck:before {
+    content: "\e9b0";
+}
+.icon-earth:before {
+    content: "\e9ca";
+}
+.icon-link:before {
+    content: "\e9cb";
+}
+.icon-attachment:before {
+    content: "\e9cd";
+}
+.icon-arrow-up2:before {
+    content: "\ea3a";
 }
 .icon-arrow-right2:before {
     content: "\ea3c";
 }
-.icon-radio-unchecked:before {
-    content: "\ea56";
+.icon-arrow-down2:before {
+    content: "\ea3e";
 }
-.icon-amazon:before {
-    content: "\ea87";
+.icon-arrow-left2:before {
+    content: "\ea40";
 }
-.icon-facebook:before {
-    content: "\ea90";
+.icon-facebook2:before {
+    content: "\ea91";
 }
 .icon-instagram:before {
     content: "\ea92";
@@ -89,8 +131,8 @@
 .icon-spotify:before {
     content: "\ea94";
 }
-.icon-telegram:before {
-    content: "\ea95";
+.icon-vimeo:before {
+    content: "\eaa0";
 }
 .icon-github:before {
     content: "\eab0";
@@ -101,8 +143,11 @@
 .icon-android:before {
     content: "\eac0";
 }
-.icon-linkedin2:before {
-    content: "\eaca";
+.icon-windows:before {
+    content: "\eac1";
+}
+.icon-linkedin:before {
+    content: "\eac9";
 }
 .icon-chrome:before {
     content: "\ead9";
@@ -110,11 +155,14 @@
 .icon-firefox:before {
     content: "\eada";
 }
-.icon-html-five2:before {
-    content: "\eae5";
+.icon-IE:before {
+    content: "\eadb";
 }
-.icon-css3:before {
-    content: "\eae6";
+.icon-edge:before {
+    content: "\eadc";
+}
+.icon-safari:before {
+    content: "\eadd";
 }
 .icon-codepen:before {
     content: "\eae8";
@@ -122,12 +170,21 @@
 
 $title-font: 'Playfair Display', serif;
 $copy-font: 'Lato', sans-serif;
+$patua: 'Patua One', sans-serif;
+$code: 'Source Code Pro', monospace;
 
 /* Colors */
-$blue: #aed5ec;
+$blue: #88bce1;
+$red: #e02626;
+$green: #b3d65c;
+$orange: #ffca46;
 $gray: #f2f2f2;
 $copy-color: #333;
 
+$primary: $red;
+
 /* Styles */
-$boxShadow: 0px 3px 6px -2px rgba(94,94,94,0.4);
+$boxShadow: 0px 3px 8px -2px rgba(94,94,94,0.15);
 $boxShadowUp: 0px 5px 8px 1px rgba(94,94,94,0.1);
+
+/* Mixins */

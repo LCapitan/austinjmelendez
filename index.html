@@ -6,53 +6,31 @@
 
     <title>Austin Melendez</title>
 
+    <link rel="icon" type="image/png" href="ui/img/favicon-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="ui/img/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="ui/img/favicon-96.png" sizes="96x96">
     <link rel="stylesheet" type="text/css" href="ui/css/imports.css">
 </head>
 
-<body>
-<div class="main-wrapper">
-    <div class="home">
-        <div class="nav">
-        <!-- start nav -->
-            <ul>
-                <li><a href="#" class="icon-display"><span>Work</span></a></li>
-                <li><a href="#" class="icon-quill"><span>Art</span></a></li>
-                <li><a href="index.html" class="icon-home2"><span>Home</span></a></li>
-                <li><a href="#" class="icon-user"><span>About</span></a></li>
-                <li><a href="#" class="icon-bubble"><span>Contact</span></a></li>
-            </ul>
-        <!-- end nav -->
-        </div>
+<body class="grid">
+<header class="nav closed">
+    <!-- start nav -->
+    <ul>
+        <li><a href="#" class="">Dev<span class="icon-stack"></span></a></li>
+        <li><a href="#" class="">Art<span class="icon-pencil2"></span></a></li>
+        <li><a href="#" class="active">Home<span class="icon-home"></span></a></li>
+        <li><a href="#" class="">About<span class="icon-user"></span></a></li>
+        <li><a href="#" class="">Connect<span class="icon-connection"></span></a></li>
+    </ul>
+    <!-- end nav -->
+</header>
 
-        <!-- start main content -->
-        <div class="cell-1">
-            <div class="container">
-                <div class="home-header">
-                    <h1>Austin<br>Melendez</h1>
-                </div>
-
-                <div class="home-sub-header">
-                    <a href="#" class="button">Developer</a> <a href="#" class="button">Artist</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="cell-2">
-            <div class="bio-pic">
-                <img src="ui/img/city.jpg" alt="city">
-            </div>
-        </div>
-        <!-- end main content -->
-
-        <div class="foot">
-        <!-- start nav -->
-            <ul>
-                <li><a href="https://codepen.io/LCapitan/" class="icon-codepen"><span>Codepen</span></a></li>
-            </ul>
-        <!-- end nav -->
-        </div>
-    </div>
+<div class="home-header">
+    <h1>Welcome</h1>
 </div>
+
+<a href="javascript:void(0);" id="navBtn" class="nav-btn btn icon-arrow-down2"></a>
+
 <script src="ui/js/vendor/jquery-3.2.1.min.js" type="text/javascript"></script>
 <script src="ui/js/main.js"></script>
 </body>
