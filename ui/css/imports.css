@@ -242,28 +242,6 @@ a {
     margin: 1.5vh auto 4vh;
     width: 20%; }
 
-.nav-btn {
-  background: #fff;
-  border: 1px solid #cccccc;
-  border-radius: 50%;
-  color: #cccccc;
-  padding: 25px;
-  text-decoration: none;
-  transition: ease .25s;
-  position: absolute;
-  top: 50px;
-  right: 50px; }
-  .nav-btn:after {
-    font-size: 30px;
-    position: relative; }
-  .nav-btn:hover {
-    border: 1px solid #e02626;
-    color: #e02626; }
-  .nav-btn.open {
-    margin-bottom: -20px;
-    transition: ease .5s;
-    transform: translateY(50px); }
-
 .home-callouts {
   grid-column: 2/13;
   grid-row: 3;
@@ -344,10 +322,6 @@ a {
   .tier-body-half p {
     margin: 3vh 0; }
 
-.nav-btn:hover {
-  border: 1px solid #b3d65c;
-  color: #b3d65c; }
-
 .button {
   background: #d9d9d9;
   border-radius: 50px;
@@ -381,19 +355,44 @@ a {
       padding: 18px 55px; } }
 
 header {
-  background: #f2f2f2;
-  grid-column: 1/14;
-  grid-row: 1;
+  margin: 50px 0 0;
   overflow: hidden; }
 
+#navBtn {
+  background: #fff;
+  border: 1px solid #cccccc;
+  border-radius: 100px;
+  color: #cccccc;
+  grid-column: 1/2;
+  grid-row: 1;
+  margin: 50px 0 0;
+  padding: 25px 0;
+  text-decoration: none;
+  transition: ease .25s; }
+  #navBtn:before {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+  #navBtn:hover {
+    border: 1px solid #88bce1;
+    color: #88bce1; }
+  #navBtn.open {
+    margin-bottom: -20px;
+    transition: ease .5s;
+    transform: translateY(50px); }
+
 .nav {
-  border-bottom: 10px solid #e02626;
+  background: #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 100px;
+  grid-column: 1/14;
+  grid-row: 1;
   height: 70px;
-  margin: 0;
   overflow: hidden;
   padding: 0;
   text-align: center;
-  transition: ease .5s; }
+  transition: ease .5s;
+  width: 100%; }
   .nav ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -429,7 +428,8 @@ header {
           background: #e5e5e5;
           transition: ease .25s; }
   .nav.closed {
-    height: 0;
+    width: 0;
+    border: none;
     transition: ease .25s; }
 
 .main {

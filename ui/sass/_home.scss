@@ -26,35 +26,6 @@
     }
 }
 
-.nav-btn {
-    background: #fff;
-    border: 1px solid darken($gray, 15%);
-    border-radius: 50%;
-    color: darken($gray, 15%);
-    padding: 25px;
-    text-decoration: none;
-    transition: ease .25s;
-    position: absolute;
-    top: 50px;
-    right: 50px;
-
-    &:after {
-        font-size: 30px;
-        position: relative;
-    }
-
-    &:hover {
-        border: 1px solid $primary;
-        color: $primary;
-    }
-
-    &.open {
-        margin-bottom: -20px;
-        transition: ease .5s;
-        transform: translateY(50px);
-    }
-}
-
 //.home-hero {
 //    justify-self: stretch;
 //    align-self: stretch;
