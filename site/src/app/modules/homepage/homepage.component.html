@@ -1,0 +1,41 @@
+<header class="nav closed">
+    <!-- start nav -->
+    <ul>
+      <li *ngFor="let item of navItems">
+        <a href="#{{item.name[0].text}}" class="">{{item.name[0].text}}
+          <span class="{{item.icon_class[0].text}}"></span>
+        </a>
+      </li>
+    </ul>
+    <!-- end nav -->
+</header>
+
+<div class="home-header" *ngIf="pageContent">
+    <h1>{{pageContent.data.title[0].text}}</h1>
+</div>
+
+<a href="javascript:void(0);" id="navBtn" class="nav-btn btn icon-arrow-down2"></a>
+
+
+
+
+
+
+
+<!--<div class="page-content" *ngIf="pageContent" [attr.data-wio-id]="pageContent.id">
+
+  <div class="title" *ngIf="pageContent.data.title" [innerHTML]="PrismicDOM.RichText.asHtml(pageContent.data.title, ctx.linkResolver)"></div>
+  <p *ngIf="pageContent.data.body" [innerHTML]="PrismicDOM.RichText.asHtml(pageContent.data.body, ctx.linkResolver)"></p>
+
+  <div *ngIf="nextPageContent && nextPageContent.results_size > 0">
+    <p>other pages:</p>
+    <p><a href="/{{nextPageContent.results[0].uid}}">{{nextPageContent.results[0].uid}}</a>
+    <br/>{{nextPageContent.results[0].data.title[0].text}}
+    <br/>{{nextPageContent.results[0].data.body[0].text}}
+  </p>
+
+    <button id="prev" *ngIf="nextPageContent.prev_page" (click)="getPrevPage()"><- prev</button>
+    <button id="next" *ngIf="nextPageContent.next_page" (click)="getNextPage()">next -></button>
+
+  </div>
+</div>-->

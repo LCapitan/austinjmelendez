@@ -1,0 +1,7 @@
+<div class="page-content" *ngIf="pageContent" [attr.data-wio-id]="pageContent.id">
+
+  <div class="title" *ngIf="pageContent.data.title" [innerHTML]="PrismicDOM.RichText.asHtml(pageContent.data.title, ctx.linkResolver)"></div>
+  <p *ngIf="pageContent.data.body" [innerHTML]="PrismicDOM.RichText.asHtml(pageContent.data.body, ctx.linkResolver)"></p>
+  <p *ngIf="pageContent.data.option">option choice: {{pageContent.data.option}}</p>
+  
+</div>
