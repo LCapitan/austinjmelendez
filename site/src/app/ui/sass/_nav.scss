@@ -1,51 +1,19 @@
 header {
-    margin: 50px 0 0;
-    overflow: hidden;
-}
-
-#navBtn {
     background: #fff;
-    border: 1px solid darken($gray, 15%);
-    border-radius: 100px;
-    color: darken($gray, 15%);
-    grid-column: 1/2;
-    grid-row: 1;
-    margin: 50px 0 0;
-    padding: 25px 0;
-    text-decoration: none;
-    transition: ease .25s;
-
-    &:before {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    &:hover {
-        border: 1px solid $blue;
-        color: $blue;
-    }
-
-    &.open {
-        margin-bottom: -20px;
-        transition: ease .5s;
-        transform: translateY(50px);
-    }
+    margin: 0 0 -.5em;
+    padding: 50px 0 0;
+    overflow: hidden;
+    width: 100%;
 }
 
 .nav {
-    background: #fff;
-    border: 1px solid $gray;
-    border-radius: 100px;
     grid-column: 1/14;
-    grid-row: 1;
-    height: 70px;
     overflow: hidden;
     padding: 0;
     text-align: center;
     transition: ease .5s;
     width: 100%;
-    
+
     ul {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -53,9 +21,7 @@ header {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        
+
         li {
             font-size: 1em;
             font-weight: 100;
@@ -68,13 +34,10 @@ header {
                 color: $copy-color;
                 display: block;
                 font-family: $copy-font;
+                font-weight: normal;
                 padding: 24px 0;
                 text-decoration: none;
                 transition: ease .25s;
-
-                //&.active {
-                //    background: darken($green, 15%);
-                //}
 
                 span {
                     color: $copy-color;
@@ -82,23 +45,17 @@ header {
                     position: relative;
                     top: 3px;
                     left: 5px;
-                    
+
                     @media screen and (min-width: 1px) and (max-width: 767px) {
                         display: block;
                     }
                 }
 
                 &:hover {
-                    background: darken($gray, 5%);
-                    transition: ease .25s;
+                    color: $orange;
+                    transition: ease .2s;
                 }
             }
         }
-    }
-
-    &.closed {
-        width: 0;
-        border: none;
-        transition: ease .25s;
     }
 }

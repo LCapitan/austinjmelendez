@@ -1,0 +1,327 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400,700|Patua+One|Source+Code+Pro:300,500');
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon/icomoon.eot?14cjf0');
+    src:  url('../fonts/icomoon/icomoon.eot?14cjf0#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?14cjf0') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?14cjf0') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?14cjf0#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'devicon';
+    src:url('../fonts/devicon/devicon.eot?-hdf3wh');
+    src:url('../fonts/devicon/devicon.eot?#iefix-hdf3wh') format('embedded-opentype'),
+    url('../fonts/devicon/devicon.woff?-hdf3wh') format('woff'),
+    url('../fonts/devicon/devicon.ttf?-hdf3wh') format('truetype'),
+    url('../fonts/devicon/devicon.svg?-hdf3wh#devicon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="devicon-"], [class*=" devicon-"] {
+    font-family: 'devicon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.devicon-handlebars:before {
+    content: "\e94b";
+}
+.devicon-rubymine:before {
+    content: "\e937";
+}
+.devicon-webstorm:before {
+    content: "\e939";
+}
+.devicon-webpack:before {
+    content: "\e929";
+}
+.devicon-visualstudio:before {
+    content: "\e927";
+}
+.devicon-slack:before {
+    content: "\e925";
+}
+.devicon-sourcetree:before {
+    content: "\e913";
+}
+.devicon-github:before {
+    content: "\e909";
+}
+.devicon-d3js:before {
+    content: "\e90c";
+}
+.devicon-confluence:before {
+    content: "\e90d";
+}
+.devicon-bitbucket:before {
+    content: "\e90f";
+}
+.devicon-safari:before {
+    content: "\e63c";
+}
+.devicon-jetbrains:before {
+    content: "\e63d";
+}
+.devicon-heroku:before {
+    content: "\e60f";
+}
+.devicon-amazonwebservices:before {
+    content: "\e603";
+}
+.devicon-android:before {
+    content: "\e60e";
+}
+.devicon-angularjs:before {
+    content: "\e61d";
+}
+.devicon-apple:before {
+    content: "\e622";
+}
+.devicon-atom:before {
+    content: "\e624";
+}
+.devicon-bootstrap:before {
+    content: "\e62f";
+}
+.devicon-chrome:before {
+    content: "\e666";
+}
+.devicon-coffeescript:before {
+    content: "\e66a";
+}
+.devicon-css3:before {
+    content: "\e679";
+}
+.devicon-drupal:before {
+    content: "\e6e3";
+}
+.devicon-firefox:before {
+    content: "\e75e";
+}
+.devicon-google:before {
+    content: "\e91e";
+}
+.devicon-grunt:before {
+    content: "\e7eb";
+}
+.devicon-gulp:before {
+    content: "\e7ec";
+}
+.devicon-html5:before {
+    content: "\e7f7";
+}
+.devicon-ie10:before {
+    content: "\e7f8";
+}
+.devicon-illustrator:before {
+    content: "\e7fa";
+}
+.devicon-javascript:before {
+    content: "\e845";
+}
+.devicon-jquery:before {
+    content: "\e84a";
+}
+.devicon-less-wordmark:before {
+    content: "\e853";
+}
+.devicon-nodejs:before {
+    content: "\eb6a";
+}
+.devicon-photoshop:before {
+    content: "\eb6d";
+}
+.devicon-rails:before {
+    content: "\eba3";
+}
+.devicon-react:before {
+    content: "\e601";
+}
+.devicon-ruby:before {
+    content: "\ebca";
+}
+.devicon-sass:before {
+    content: "\ebcb";
+}
+.devicon-trello:before {
+    content: "\ebcf";
+}
+.devicon-twitter:before {
+    content: "\e91f";
+}
+.devicon-windows8:before {
+    content: "\ebf5";
+}
+.devicon-wordpress:before {
+    content: "\ebfe";
+}
+
+
+.icon-home:before {
+    content: "\e900";
+}
+.icon-pencil2:before {
+    content: "\e906";
+}
+.icon-images:before {
+    content: "\e90e";
+}
+.icon-connection:before {
+    content: "\e91b";
+}
+.icon-stack:before {
+    content: "\e92e";
+}
+.icon-display:before {
+    content: "\e956";
+}
+.icon-mobile:before {
+    content: "\e958";
+}
+.icon-mobile2:before {
+    content: "\e959";
+}
+.icon-database:before {
+    content: "\e964";
+}
+.icon-user:before {
+    content: "\e971";
+}
+.icon-enlarge2:before {
+    content: "\e98b";
+}
+.icon-shrink2:before {
+    content: "\e98c";
+}
+.icon-magic-wand:before {
+    content: "\e997";
+}
+.icon-bug:before {
+    content: "\e999";
+}
+.icon-pie-chart:before {
+    content: "\e99a";
+}
+.icon-stats-dots:before {
+    content: "\e99b";
+}
+.icon-stats-bars:before {
+    content: "\e99c";
+}
+.icon-mug:before {
+    content: "\e9a2";
+}
+.icon-spoon-knife:before {
+    content: "\e9a3";
+}
+.icon-meter2:before {
+    content: "\e9a7";
+}
+.icon-fire:before {
+    content: "\e9a9";
+}
+.icon-lab:before {
+    content: "\e9aa";
+}
+.icon-airplane:before {
+    content: "\e9af";
+}
+.icon-truck:before {
+    content: "\e9b0";
+}
+.icon-earth:before {
+    content: "\e9ca";
+}
+.icon-link:before {
+    content: "\e9cb";
+}
+.icon-attachment:before {
+    content: "\e9cd";
+}
+.icon-arrow-up2:before {
+    content: "\ea3a";
+}
+.icon-arrow-right2:before {
+    content: "\ea3c";
+}
+.icon-arrow-down2:before {
+    content: "\ea3e";
+}
+.icon-arrow-left2:before {
+    content: "\ea40";
+}
+.icon-facebook2:before {
+    content: "\ea91";
+}
+.icon-instagram:before {
+    content: "\ea92";
+}
+.icon-spotify:before {
+    content: "\ea94";
+}
+.icon-vimeo:before {
+    content: "\eaa0";
+}
+.icon-github:before {
+    content: "\eab0";
+}
+.icon-appleinc:before {
+    content: "\eabe";
+}
+.icon-android:before {
+    content: "\eac0";
+}
+.icon-windows:before {
+    content: "\eac1";
+}
+.icon-linkedin:before {
+    content: "\eac9";
+}
+.icon-chrome:before {
+    content: "\ead9";
+}
+.icon-firefox:before {
+    content: "\eada";
+}
+.icon-IE:before {
+    content: "\eadb";
+}
+.icon-edge:before {
+    content: "\eadc";
+}
+.icon-safari:before {
+    content: "\eadd";
+}
+.icon-codepen:before {
+    content: "\eae8";
+}

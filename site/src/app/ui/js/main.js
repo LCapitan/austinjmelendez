@@ -5,15 +5,8 @@
 $(document).ready(
 
     function main() {
-        // console.log('In progress');
+        console.log('In progress');
 
-        $nav = $('.nav');
-        $navButton = $('#navBtn');
-
-
-        $navButton.on('click', function() {
-            $nav.toggleClass('closed');
-        })
     }
 
 );

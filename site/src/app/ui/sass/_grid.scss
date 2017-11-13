@@ -1,5 +1,14 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(13, 1fr);
-    grid-gap: 1em;
+    grid-auto-flow: row;
+    grid-gap: .5em;
+}
+
+.row {
+    grid-column: 1/14;
+
+    &.inner {
+        grid-column: 2/13;
+    }
 }

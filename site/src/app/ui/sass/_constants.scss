@@ -7,13 +7,9 @@
 }
 
 html {
-    font-size: 1.5vw;
+    font-size: 20px;
     margin: 0;
     padding: 0;
-
-    @media screen and (min-width: 1024px) {
-        font-size: 20px;
-    }
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -22,34 +18,41 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 body {
-    background: #fff;
+    background: $gray;
     color: $copy-color;
     font-family: $copy-font;
-    font-weight: 100;
+    font-weight: normal;
     margin: 0 auto;
     padding: 0;
     width: 100vw;
     max-width: 1440px;
+    -webkit-font-smoothing: antialiased;
 }
 
 h1 {
     font-family: $patua;
-    font-size: 2.5em;
+    font-size: 93px;
     font-weight: 400;
 }
 
 h2 {
     font-family: $copy-font;
-    font-size: 2em;
+    font-size: 44px;
     font-weight: 100;
+    margin: 0;
+    padding: 1vh 0;
 }
 
 h3 {
-    font-family: $title-font;
+    font-size: 45px;
+    font-family: $copy-font;
     font-weight: normal;
+    margin: 2.5vh 0;
+    padding: 1vh 0;
 }
 
 h4 {
+    font-size: 25px;
     font-family: $copy-font;
     font-weight: normal;
 }
@@ -60,9 +63,22 @@ h4 {
 }
 
 a {
-    color: $primary;
+    color: $green;
+    font-family: $patua;
+    font-weight: 100;
+    text-decoration: none;
 
     &:hover {
-        color: darken($primary,15%)
+        color: darken($green, 15%);
+        text-decoration: none;
+    }
+
+    &.blue {
+        color: $blue;
+
+        &:hover {
+            color: darken($blue, 15%);
+            text-decoration: none;
+        }
     }
 }
